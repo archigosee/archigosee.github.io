@@ -218,7 +218,7 @@ function About() {
           {[
             [years, '+', 'Years building'],
             [55, '+', 'Repositories'],
-            [12, '', 'Featured products'],
+            [projects.length, '', 'Featured products'],
             [4, '', 'Industries served'],
           ].map(([n, suf, label]) => (
             <div className="stat reveal glass" key={label as string}>

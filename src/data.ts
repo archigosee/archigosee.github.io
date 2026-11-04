@@ -91,21 +91,6 @@ export const projects: Project[] = [
     stack: ['React', 'Vite', 'Tailwind CSS', 'Firebase', 'Firestore'],
   },
   {
-    id: 'landmark',
-    title: 'Landmark Hospital',
-    category: 'Health',
-    year: '2026',
-    accent: '#f472b6',
-    platform: 'web',
-    summary: 'A full rebuild of a hospital website: modern, responsive UI with all of the original information and assets preserved.',
-    highlights: [
-      'Content migrated from the legacy site',
-      'Clean, professional UI that works on every screen size',
-      'React front end with a Node.js layer',
-    ],
-    stack: ['React', 'TypeScript', 'Tailwind CSS', 'Node.js'],
-  },
-  {
     id: 'faydapay',
     title: 'FaydaPay',
     category: 'Fintech',
