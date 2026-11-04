@@ -132,9 +132,16 @@ export const projects: Project[] = [
     year: '2025',
     accent: '#d97706',
     platform: 'web',
-    summary: 'Traceability for Ethiopian coffee: follow lots from farm to export with a data-backed dashboard.',
-    highlights: ['Supply-chain records stored in PostgreSQL', 'Dashboard UI with Next.js', 'Shipped on Vercel'],
-    stack: ['Next.js', 'TypeScript', 'PostgreSQL', 'Vercel'],
+    summary:
+      'Farm-to-cup traceability for Ethiopian coffee: farmers register batches, ownership moves along the chain, certifiers issue certificates, and anyone can verify a batch by code.',
+    highlights: [
+      'Five role dashboards (farmer, cooperative, exporter, certifier, admin)',
+      'Register, transfer, confirm and certify flows on a simulated ledger',
+      'Public batch verification with shareable links',
+      'English / Amharic UI; demo mode with seeded data',
+    ],
+    stack: ['Next.js', 'TypeScript', 'Tailwind', 'Radix UI', 'Vercel'],
+    live: 'https://coffee-origins-demo.vercel.app',
   },
   {
     id: 'ethiotech',
