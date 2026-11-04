@@ -314,6 +314,11 @@ function ProjectCard({ project, index, onOpen }: { project: Project; index: numb
               Live ↗
             </a>
           )}
+          {project.apk && (
+            <a className="link" href={project.apk} download>
+              Download APK ↓
+            </a>
+          )}
         </div>
       </div>
     </article>
@@ -414,6 +419,11 @@ function CaseStudy({ open, onClose }: { open: { project: Project; rect: DOMRect 
           {p.live && (
             <a className="btn primary" href={p.live} target="_blank" rel="noreferrer">
               Visit live site ↗
+            </a>
+          )}
+          {p.apk && (
+            <a className="btn ghost" href={p.apk} download>
+              Download APK ↓
             </a>
           )}
           {p.repo ? (

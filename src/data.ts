@@ -11,6 +11,7 @@ export type Project = {
   stack: string[]
   live?: string
   repo?: string // only for public repositories
+  apk?: string // public Android APK download
   platform: 'web' | 'mobile' | 'ai'
 }
 
@@ -97,13 +98,16 @@ export const projects: Project[] = [
     year: '2026',
     accent: '#fbbf24',
     platform: 'mobile',
-    summary: 'A financial bridge to Ethiopia’s Fayda national digital ID: a Flutter mobile wallet on a secure Go payment backend with e-KYC verification.',
+    summary: 'Turns Ethiopia’s Fayda digital ID into a portable credit profile: sign in with Fayda, get a FaydaScore, approve bank access requests and take an instant micro-loan to a mobile wallet. The live demo uses fictional identities and mock payments.',
     highlights: [
-      'Cross-platform mobile app in Flutter (Android and iOS)',
-      'Go backend for secure payment infrastructure, containerized with Docker',
-      'Identity verification through Fayda e-KYC integration',
+      'Flutter app for Android and web with a FaydaScore gauge, cross-bank debt check and borrowing power',
+      'CIBA-style consent prompts so banks only see your score after you approve',
+      'Go backend with a Fayda OIDC (eSignet) simulator, risk aggregator, debt registry and audit trail, run with Docker',
+      'Standalone demo mode: mock e-KYC and a mock Telebirr rail, with no real money or ID data',
     ],
-    stack: ['Flutter', 'Dart', 'Go', 'Docker', 'e-KYC'],
+    stack: ['Flutter', 'Dart', 'Go', 'PostgreSQL', 'Docker', 'OIDC'],
+    live: 'https://faydapay-demo.vercel.app',
+    apk: 'https://faydapay-demo.vercel.app/downloads/faydapay-demo.apk',
   },
   {
     id: 'car-rental',
