@@ -430,6 +430,13 @@ function CaseStudy({ open, onClose }: { open: { project: Project; rect: DOMRect 
 }
 
 function Contact() {
+  const [copied, setCopied] = useState(false)
+  const copy = () => {
+    navigator.clipboard?.writeText(profile.email).then(() => {
+      setCopied(true)
+      window.setTimeout(() => setCopied(false), 1800)
+    })
+  }
   return (
     <section id="contact" className="contact">
       <div className="contact-card glass reveal">
@@ -440,9 +447,18 @@ function Contact() {
           <span className="grad">Let's build it.</span>
         </h2>
         <p className="muted">Web platforms, mobile apps, AI automations or a rebuild of something that already exists. I'm open to freelance and full-time roles.</p>
+        <a className="contact-email" href={`mailto:${profile.email}`}>
+          {profile.email}
+        </a>
         <div className="hero-actions">
-          <a className="btn primary" href={profile.github} target="_blank" rel="noreferrer">
-            github.com/{profile.handle} ↗
+          <a className="btn primary" href={`mailto:${profile.email}`}>
+            Email me
+          </a>
+          <button className="btn ghost" onClick={copy} aria-live="polite">
+            {copied ? 'Copied ✓' : 'Copy email'}
+          </button>
+          <a className="btn ghost" href={profile.github} target="_blank" rel="noreferrer">
+            GitHub ↗
           </a>
         </div>
       </div>

@@ -23,6 +23,7 @@ export const profile = {
   location: 'Ethiopia',
   github: 'https://github.com/archigosee',
   handle: 'archigosee',
+  email: 'kaleabmekonnen45@gmail.com',
   quote: 'Programming is 10% coding and 90% figuring out why it is not working.',
 }
 

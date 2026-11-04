@@ -195,5 +195,7 @@ section { padding: 120px var(--pad); }
 .contact-card { max-width: 1100px; margin: 0 auto; padding: clamp(32px, 6vw, 80px); text-align: center; display: flex; flex-direction: column; align-items: center; }
 .contact-card h2 { margin: 18px 0; font-size: clamp(36px, 6vw, 76px); letter-spacing: -0.04em; line-height: 1; }
 .contact-card p { max-width: 520px; line-height: 1.6; }
-.contact-card .hero-actions { justify-content: center; }
+.contact-card .hero-actions { justify-content: center; margin-top: 24px; }
+.contact-email { margin-top: 28px; font-size: clamp(18px, 3vw, 30px); font-weight: 600; letter-spacing: -0.01em; overflow-wrap: anywhere; border-bottom: 1px solid var(--line); padding-bottom: 4px; transition: border-color 0.3s, color 0.3s; }
+.contact-email:hover { color: var(--cyan); border-color: var(--cyan); }
 .footer { max-width: 1100px; margin: 80px auto 0; display: flex; flex-wrap: wrap; gap: 8px; justify-content: space-between; font-size: 13px; padding-top: 24px; border-top: 1px solid var(--line); }
