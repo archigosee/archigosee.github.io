@@ -150,9 +150,16 @@ export const projects: Project[] = [
     year: '2025',
     accent: '#2dd4bf',
     platform: 'web',
-    summary: 'An analytics dashboard for an Ethiopian tech organization, backed by a Postgres data layer.',
-    highlights: ['Data-dense dashboard layouts', 'SQL-backed metrics', 'Deployed on Vercel'],
-    stack: ['Next.js', 'TypeScript', 'PostgreSQL'],
+    summary:
+      'A KPI dashboard for Ethiopian startups: track revenue, MRR, burn and runway, users and retention, funding rounds, expenses, goals and alerts, with a startup health score.',
+    highlights: [
+      'Finance, growth, operations and analytics pages built from recorded monthly metrics',
+      'Forms to record monthly metrics, expenses and funding rounds, with live month-over-month changes',
+      'Goals, burn-rate and runway alerts, and a startup health score',
+      'Supabase (Postgres + Auth) backend; demo mode with a seeded startup and demo login',
+    ],
+    stack: ['Next.js', 'TypeScript', 'Supabase', 'PostgreSQL', 'Tailwind', 'Vercel'],
+    live: 'https://ethiotech-demo.vercel.app',
   },
   {
     id: 'zmart',
