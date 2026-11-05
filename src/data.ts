@@ -62,6 +62,24 @@ export const projects: Project[] = [
     live: 'https://wada-clinic-pi.vercel.app',
   },
   {
+    id: 'clinic-management',
+    title: 'Clinic Management System',
+    category: 'Health',
+    year: '2026',
+    accent: '#60a5fa',
+    platform: 'web',
+    summary:
+      'A front-desk-to-doctor workflow app for a physiotherapy clinic: reception registers and checks in patients, doctors work a real-time queue, admins manage roles and audit activity.',
+    highlights: [
+      'Role-based screens for receptionist, doctor and admin, plus shared reports',
+      'Real-time waiting-room queue with Firestore listeners',
+      'Appointments, follow-ups, daily/monthly/date-range patient counts and an audit log',
+      'Demo mode with fictional patients and one-click role logins, no Firebase keys needed',
+    ],
+    stack: ['React', 'Vite', 'TypeScript', 'Tailwind CSS', 'Firebase Auth', 'Firestore'],
+    live: 'https://clinic-flow-demo-ecru.vercel.app',
+  },
+  {
     id: 'eyor',
     title: 'Eyor Medical Services',
     category: 'Health',
